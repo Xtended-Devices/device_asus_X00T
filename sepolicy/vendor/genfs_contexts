@@ -12,5 +12,11 @@ genfscon sysfs /sys/devices/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpu_busy_per
 genfscon sysfs /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-00/800f000.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/battery/temp	u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-00/800f000.qcom,spmi:qcom,pm660@0:qpnp,fg/power_supply/bms/charge_now_raw	u:object_r:sysfs_battery_supply:s0
 
-#Backlight_dimmer
-genfscon sysfs /sys/module/mdss_fb/parameters/backlight_dimmer		u:object_r:sysfs:s0
+# LED
+genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds                 u:object_r:sysfs_graphics:s0
+
+# Headphone Gain
+genfscon sysfs /kernel/sound_control/headphone_gain                                      u:object_r:sysfs_hgain:s0
+
+# Microphone Gain
+genfscon sysfs /kernel/sound_control/mic_gain                                            u:object_r:sysfs_mgain:s0
