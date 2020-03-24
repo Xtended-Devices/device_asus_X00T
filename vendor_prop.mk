@@ -37,6 +37,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio_hal.period_size=192 \
+    vendor.audio.dolby.ds2.enabled=true \
+    vendor.audio.dolby.ds2.hardbypass=false \
     vendor.voice.path.for.pcm.voip=false \
     vendor.audio.volume.headset.gain.depcal=true
 

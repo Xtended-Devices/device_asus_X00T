@@ -791,6 +791,25 @@ vendor/etc/qdcm_calib_data_nt36672_1080p_video_mode_dsi_panel.xml|b89bc9525be1f3
 vendor/etc/qdcm_calib_data_nt36672_1080p_video_mode_dsi_txd_panel.xml|8664373892818223bffd7207386863b722c269e2
 vendor/etc/qdcm_calib_data_td4310_1080p_video_mode_dsi_txd_panel.xml|b89bc9525be1f3948068f607dde7178ce683c7f5
 
+# Dolby
+-app/MotoDolbyV3/MotoDolbyV3.apk
+etc/permissions/com.dolby.daxservice.xml
+etc/permissions/com.motorola.dolby.dolbyui.features.xml
+-priv-app/daxService/daxService.apk
+vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
+vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
+vendor/etc/dolby/dax-default-na.xml
+vendor/etc/dolby/dax-default.xml
+vendor/lib/libdapparamstorage.so
+vendor/lib/libstagefrightdolby.so
+vendor/lib/soundfx/libswdap.so
+vendor/lib/vendor.dolby.hardware.dms@1.0.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@1.0.so
+
 # Display firmware (Novatek) - from Stock Pie
 vendor/firmware/novatek_ts_fw_dj.bin|fd3d12c6abd1a77766ab1d1a0a60ce4256001614
 vendor/firmware/novatek_ts_fw_txd.bin|3841353c8f050a81178f9a5667b1e7cd5bdcc514
