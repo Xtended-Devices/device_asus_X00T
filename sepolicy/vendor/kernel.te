@@ -14,3 +14,7 @@ allow kernel fuse:dir { write add_name };
 allow kernel fuse:file { create };
 
 dontaudit kernel kernel:capability { dac_read_search };
+
+allow kernel kcal_dev:dir relabelto;
+allow kernel kcal_dev:file relabelto;
+allow kernel kcal_dev:lnk_file relabelto;

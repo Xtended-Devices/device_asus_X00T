@@ -16,7 +16,7 @@ allow platform_app sysfs_battery_supply:dir { search };
 allow platform_app sysfs_kgsl:file r_file_perms;
 allow platform_app sysfs_battery_supply:file { read open getattr };
 allow platform_app sysfs_kgsl:file { read };
-
+allow platform_app sysfs_leds:dir search;
 
 #Allow sysfs_device_info to be read
 r_dir_file(platform_app, sysfs_device_info)
