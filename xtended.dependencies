@@ -10,5 +10,11 @@
         "repository":   "NKTN30/vendor_asus",
         "target_path":  "vendor/asus",
         "revision":     "eleven"
+    },
+    {
+        "remote":       "github",
+        "repository":   "NKTN30/android_packages_apps_GcamGOPrebuilt",
+        "target_path":  "packages/apps/GcamGOPrebuilt"
+        "revision":     "eleven"
     }
 ]
