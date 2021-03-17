@@ -20,7 +20,6 @@
 # included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 #
-
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -338,6 +337,9 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# Oplauncher
+$(call inherit-product, vendor/oplauncher/OPLauncher.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
