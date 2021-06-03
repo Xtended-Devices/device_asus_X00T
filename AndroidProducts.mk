@@ -15,7 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_X00T.mk
+    $(LOCAL_DIR)/xtended_X00T.mk
 
 COMMON_LUNCH_CHOICES := \
-      havoc_X00T-userdebug
+      xtended_X00T-userdebug \
+      xtended_X00T-user \
+      xtended_X00T-eng
