@@ -44,6 +44,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := asus/ASUS_X00TD/ASUS_X00TD:10/QKQ1/17.2017.2012.438-20201203:user/release-keys
 
+# Xtended - OFFICIAL
+XTENDED_BUILD_TYPE := OFFICIAL
+XTENDED_BUILD_MAINTAINER := Navin (NKTN30)
+XTENDED_BUILD_DONATE_URL := https://paypal.me/NKTN30
+
 # The following system and vendor props will be set by vendor init
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.device \
@@ -54,3 +59,4 @@ PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
     ro.vendor.product.device \
     ro.vendor.product.model \
     ro.vendor.product.name
+
