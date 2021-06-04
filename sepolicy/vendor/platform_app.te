@@ -8,6 +8,10 @@ allow platform_app sysfs_fps:file { getattr open read };
 
 # Allow theme_prop to be read by system ui
 get_prop(platform_app, theme_prop)
-
+allow platform_app sysfs_device_info:lnk_file { read open getattr ioctl };
 allow platform_app vendor_sysfs_battery_supply:dir { search };
 allow platform_app vendor_sysfs_battery_supply:file { read open getattr ioctl };
+allow platform_app sysfs_battery_supply:dir { search };
+
+#Allow sysfs_device_info to be read
+r_dir_file(platform_app, sysfs_device_info)

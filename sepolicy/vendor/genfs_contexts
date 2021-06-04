@@ -6,3 +6,6 @@ genfscon sysfs /kernel/touchpanel      u:object_r:sysfs_touchpanel:s0
 # Proc
 genfscon proc /sys/vm/swappiness                      u:object_r:proc_swappiness:s0
 
+# gpu_clock
+genfscon sysfs /sys/devices/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/clock_mhz           u:object_r:sysfs_kgsl:s0
+genfscon sysfs /sys/devices/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpu_busy_percentage         u:object_r:sysfs_kgsl:s0
