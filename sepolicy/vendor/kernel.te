@@ -10,3 +10,5 @@ allow kernel tmpfs:dir search;
 allow kernel vfat:file open;
 allow kernel vfat:dir { search };
 allow kernel kernel:system { module_request };
+allow kernel fuse:dir { write add_name };
+allow kernel fuse:file { create };

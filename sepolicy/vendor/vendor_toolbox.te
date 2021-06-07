@@ -36,3 +36,11 @@ allow vendor_toolbox {
     unlabeled
     vendor_persist_mmi_file
 }:dir { r_dir_perms setattr getattr };
+
+allow vendor_toolbox mnt_vendor_file:file { getattr };
+allow vendor_toolbox persist_alarm_file:file { getattr };
+allow vendor_toolbox persist_display_file:file { getattr };
+allow vendor_toolbox persist_drm_file:file { getattr };
+allow vendor_toolbox persist_rfs_file:file { getattr };
+allow vendor_toolbox persist_time_file:file { getattr };
+allow vendor_toolbox sensors_persist_file:file { getattr };
