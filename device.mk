@@ -339,7 +339,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Oplauncher
-$(call inherit-product, vendor/oplauncher/OPLauncher.mk)
+$(call inherit-product-if-exists, vendor/oplauncher/OPLauncher.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
