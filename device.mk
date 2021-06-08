@@ -338,9 +338,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Oplauncher
-$(call inherit-product-if-exists, vendor/oplauncher/OPLauncher.mk)
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
