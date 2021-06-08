@@ -14,6 +14,7 @@ allow hal_camera_default sysfs_sensors:dir { open  read  search };
 allow hal_camera_default sysfs_sensors:file { open  read };
 allow hal_camera_default sysfs_sensors:lnk_file { read };
 allow hal_camera_default vendor_sensors_dbg_prop:file { getattr  open  read };
+allow hal_camera_default diag_device:chr_file { write };
 
 set_prop(hal_camera_default, vendor_camera_prop)
 get_prop(hal_camera_default, vendor_system_prop)
