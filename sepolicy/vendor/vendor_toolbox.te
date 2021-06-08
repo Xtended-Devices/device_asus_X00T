@@ -44,3 +44,5 @@ allow vendor_toolbox persist_drm_file:file { getattr };
 allow vendor_toolbox persist_rfs_file:file { getattr };
 allow vendor_toolbox persist_time_file:file { getattr };
 allow vendor_toolbox sensors_persist_file:file { getattr };
+
+dontaudit vendor_toolbox vendor_toolbox:capability { dac_read_search };
